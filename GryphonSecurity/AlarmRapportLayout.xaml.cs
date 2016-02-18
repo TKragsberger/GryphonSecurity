@@ -16,5 +16,27 @@ namespace GryphonSecurity
         {
             InitializeComponent();
         }
+
+        private void sendRapport_Click(object sender, RoutedEventArgs e)
+        {
+            TextBox kundenavnTB= (TextBox)textBoxKundenavn;
+            String kundenavn = kundenavnTB.Text;
+            TextBox kundenummerTB = (TextBox)textBoxKundenummer;
+            String kundenummer = kundenavnTB.Text;
+            TextBox gadeOgHusnummerTB = (TextBox)textBoxGadeOgHusnummer;
+            String gadeOgHusnummer = gadeOgHusnummerTB.Text;
+            TextBox postnummerTB = (TextBox)textBoxPostnummer;
+            String postnummer = postnummerTB.Text;
+            TextBox byTB = (TextBox)textBoxBy;
+            String by = byTB.Text;
+            TextBox telefonnummerTB = (TextBox)textBoxTelefonnummer;
+            String telefonnummer = telefonnummerTB.Text;
+            TextBox datoTB = (TextBox)textBoxDato;
+            String dato = datoTB.Text;
+            TextBox tidTB = (TextBox)textBoxTid;
+            String tid = tidTB.Text;
+            TextBox zoneTB = (TextBox)textBoxZone;
+            String zone = zoneTB.Text;
+        }
     }
 }

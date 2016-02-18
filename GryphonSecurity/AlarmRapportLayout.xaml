@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -20,6 +21,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        
+        
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
@@ -28,8 +31,52 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <ScrollViewer>
+                <StackPanel>
+                    
+                    <TextBlock Margin="28,0,0,0">Kundenavn:</TextBlock>
+                    <toolkit:PhoneTextBox x:Name="textBoxKundenavn"  HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxKundenummer" Hint="Kundenummer" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxGadeOgHusnummer" Hint="Gade og husnummer" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxPostnummer" Hint="Postnummer" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxBy" Hint="By" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxTelefonnummer" Hint="Telefonnummer" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <TextBlock Margin="28,0,0,0">Dato:</TextBlock>
+                    <toolkit:PhoneTextBox x:Name="textBoxDato" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxTid" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxZone" Hint="Zone" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <CheckBox x:Name="checkBoxIndbrudHaevaerk" Content="Indbrud hærværk" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxVindueDorLukket" Content="Vindue dør lukket" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxAntruffenPerson" Content="Antruffen person" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxPersonalefejl" Content="Personalefejl" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxIntetAtBemaerke" Content="Intet at bemærke" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxTekniskFejl" Content="Teknisk fejl" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxUkendtAasag" Content="Ukendt årsag" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxAndet" Content="Andet" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxAfmeldtUnderUdrykning" Content="Afmeldt under udrykning" Margin="18,0,0,0"/>
+                    <CheckBox x:Name="checkBoxAfdaekningForetaget" Content="Afdækning foretaget" Margin="18,0,0,0"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxBemaerkning" Hint="Bemærkning" HorizontalAlignment="Left" Height="200" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxNavn" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxInstallator" Hint="Installatør" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxKontrolcentral" Hint="Kontrolcentral" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <TextBlock Margin="28,0,0,0">Vagt rekvireret den</TextBlock>
+                    <toolkit:PhoneTextBox x:Name="textBoxVagtRekvireretDen" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <TextBlock Margin="28,0,0,0">Vagt rekviveret fra</TextBlock>
+                    <toolkit:PhoneTextBox x:Name="textBoxVagtRekviveretFra" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <TextBlock Margin="28,0,0,0">Vagt rekviveret til</TextBlock>
+                    <toolkit:PhoneTextBox x:Name="textBoxVagtRekviveretTil" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <TextBlock Margin="28,0,0,0">Var fremme</TextBlock>
+                    <toolkit:PhoneTextBox x:Name="textBoxVarFremme" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <TextBlock Margin="28,0,0,0">Færdig</TextBlock>
+                    <toolkit:PhoneTextBox x:Name="textBoxFaedig" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    
+                    <Button x:Name="buttonSendRapport" Content="Send Rapport" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="436" Click="sendRapport_Click"/>
+                    
+                </StackPanel>
+                
+            </ScrollViewer>
         </Grid>
+       
     </Grid>
 
 </phone:PhoneApplicationPage>
