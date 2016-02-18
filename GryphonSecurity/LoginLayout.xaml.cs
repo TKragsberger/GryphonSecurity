@@ -13,7 +13,7 @@ namespace GryphonSecurity
     public partial class LoginLayout : PhoneApplicationPage
     {
 
-
+        Controller controller = Controller.Instance;
         public LoginLayout()
         {
             InitializeComponent();
@@ -28,15 +28,24 @@ namespace GryphonSecurity
             TextBox t2 = (TextBox)textBoxKodeord;
             String kodeord = t2.Text;
 
-            if (brugernavn.Contains("knud") && kodeord.Contains("sutter"))
+           if (brugernavn.Contains("knud") && kodeord.Contains("sutter"))
             {
                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+                try
+                { 
+                    controller.login(brugernavn, kodeord);
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Fejl i login");  
+                }
             }
-            else
+           else
             {
-                MessageBox.Show("Brugernavn eller kodeord er forkert");
-            }
-        }
+               MessageBox.Show("Brugernavn eller kodeord er forkert");
+           }
+       }
 
         private void registereButton_Click(object sender, RoutedEventArgs e)
         {
