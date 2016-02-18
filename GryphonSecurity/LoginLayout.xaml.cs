@@ -12,14 +12,36 @@ namespace GryphonSecurity
 {
     public partial class LoginLayout : PhoneApplicationPage
     {
+
+
         public LoginLayout()
         {
             InitializeComponent();
+
+            //String lastName = textBoxLastname.Text;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            TextBox t = (TextBox)textBoxBrugernavn;
+            String brugernavn = t.Text;
+            TextBox t2 = (TextBox)textBoxKodeord;
+            String kodeord = t2.Text;
+
+            if (brugernavn.Contains("knud") && kodeord.Contains("sutter"))
+            {
+                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            }
+            else
+            {
+                MessageBox.Show("Brugernavn eller kodeord er forkert");
+            }
+        }
+
+        private void registereButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/RegisterLayout.xaml", UriKind.Relative));
+
         }
     }
 }

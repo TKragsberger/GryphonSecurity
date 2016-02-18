@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -28,9 +29,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <toolkit:PhoneTextBox x:Name="textBoxBrugernavn" HorizontalAlignment="Left" Height="72" Margin="0,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Brugernavn" RenderTransformOrigin="0.512,0.501"/>
+            <toolkit:PhoneTextBox x:Name="textBoxKodeord" HorizontalAlignment="Left" Height="72" Margin="0,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
+            <Button x:Name="registereButton" Content="Registrere" HorizontalAlignment="Left" Margin="30,500,0,0" VerticalAlignment="Top" Width="390" Click="registereButton_Click"/>
         </Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="45,480,0,0" Grid.Row="1" VerticalAlignment="Top" Width="390" Click="button_Click"/>
+        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="42,449,0,0" Grid.Row="1" VerticalAlignment="Top" Width="390" Click="button_Click"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

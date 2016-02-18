@@ -16,5 +16,10 @@ namespace GryphonSecurity
         {
             InitializeComponent();
         }
+
+        private void textBoxKodeord3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
