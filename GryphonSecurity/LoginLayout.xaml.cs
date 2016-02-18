@@ -12,15 +12,44 @@ namespace GryphonSecurity
 {
     public partial class LoginLayout : PhoneApplicationPage
     {
+
+        Controller controller = Controller.Instance;
         public LoginLayout()
         {
             InitializeComponent();
-            String name = textBoxName.Text;
-            String lastName = textBoxLastname.Text;
+
+            //String lastName = textBoxLastname.Text;
         }
 
-        private void buttonLogin_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
+            TextBox t = (TextBox)textBoxBrugernavn;
+            String brugernavn = t.Text;
+            TextBox t2 = (TextBox)textBoxKodeord;
+            String kodeord = t2.Text;
+
+           if (brugernavn.Contains("knud") && kodeord.Contains("sutter"))
+            {
+                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+                try
+                { 
+                    controller.login(brugernavn, kodeord);
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Fejl i login");  
+                }
+            }
+           else
+            {
+               MessageBox.Show("Brugernavn eller kodeord er forkert");
+           }
+       }
+
+        private void registereButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/RegisterLayout.xaml", UriKind.Relative));
 
         }
     }

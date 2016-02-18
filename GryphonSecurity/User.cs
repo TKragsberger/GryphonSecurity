@@ -8,10 +8,15 @@ namespace GryphonSecurity
 {
     class User
     {
-        String name;
-        String lastname;
-        String adresse;
-        long phoneNumber;
-
+        private String name;
+        private String lastname;
+        private String adresse;
+        private long phoneNumber;
+        public String toString()
+        {
+            return name + lastname + adresse + phoneNumber;
     }
+    }
+
+    
 }

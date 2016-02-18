@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
@@ -28,7 +29,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <toolkit:PhoneTextBox x:Name="textBoxFornavn" HorizontalAlignment="Left" Height="72" Margin="0,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Fornavn" />
+            <toolkit:PhoneTextBox x:Name="textBoxEfternavn" HorizontalAlignment="Left" Height="72" Margin="0,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Efternavn" />
+            <toolkit:PhoneTextBox x:Name="textBoxKodeord2" HorizontalAlignment="Left" Height="72" Margin="0,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
+            <toolkit:PhoneTextBox x:Name="brugernavn" HorizontalAlignment="Left" Height="72" Margin="0,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Brugernavn" TextChanged="textBoxKodeord3_TextChanged" />
+            <toolkit:PhoneTextBox x:Name="textBoxKodeord4" HorizontalAlignment="Left" Height="72" Margin="0,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
+            <toolkit:PhoneTextBox x:Name="textBoxKodeord" HorizontalAlignment="Left" Height="72" Margin="0,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
+            <Button x:Name="RegistrerBrugerButton" Content="Registrer " HorizontalAlignment="Left" Margin="67,514,0,0" VerticalAlignment="Top" Width="320"/>
         </Grid>
     </Grid>
 
