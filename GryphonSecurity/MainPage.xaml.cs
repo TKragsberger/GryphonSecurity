@@ -17,8 +17,7 @@ namespace GryphonSecurity
         public MainPage()
         {
             InitializeComponent();
-
-            // Sample code to localize the ApplicationBar
+           // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
 

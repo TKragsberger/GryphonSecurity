@@ -30,6 +30,7 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
 
         </Grid>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="45,480,0,0" Grid.Row="1" VerticalAlignment="Top" Width="390" Click="button_Click"/>
     </Grid>
 
 </phone:PhoneApplicationPage>
