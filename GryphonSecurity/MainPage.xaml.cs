@@ -13,13 +13,17 @@ namespace GryphonSecurity
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        
+
         // Constructor
         public MainPage()
         {
             InitializeComponent();
-            loadup();
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+
+            
+            
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -33,7 +37,9 @@ namespace GryphonSecurity
         }
         private void loadup()
         {
-            NavigationService.Navigate(new Uri("/LoginLayout.xaml", UriKind.Relative));
+            String loginLayout = "/LoginLayout.xaml";
+
+            NavigationService.Navigate(new Uri(loginLayout, UriKind.Relative));
         }
 
         // Sample code for building a localized ApplicationBar

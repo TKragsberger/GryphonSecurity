@@ -96,6 +96,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DBFacade.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="LoginLayout.xaml.cs">
       <DependentUpon>LoginLayout.xaml</DependentUpon>
@@ -143,7 +146,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
