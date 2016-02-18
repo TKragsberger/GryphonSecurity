@@ -28,7 +28,9 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <Button x:Name="buttonLogin" Content="Button" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Width="436" Click="buttonLogin_Click"/>
+            <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="72" Margin="0,64,0,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Width="456"/>
+            <TextBox x:Name="textBoxLastname" HorizontalAlignment="Left" Height="72" Margin="0,185,0,0" TextWrapping="Wrap" Text="Efternavn" VerticalAlignment="Top" Width="456"/>
         </Grid>
     </Grid>
 

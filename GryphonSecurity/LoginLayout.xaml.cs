@@ -15,6 +15,13 @@ namespace GryphonSecurity
         public LoginLayout()
         {
             InitializeComponent();
+            String name = textBoxName.Text;
+            String lastName = textBoxLastname.Text;
+        }
+
+        private void buttonLogin_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
