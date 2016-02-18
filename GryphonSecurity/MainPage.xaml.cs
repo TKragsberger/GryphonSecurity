@@ -13,13 +13,13 @@ namespace GryphonSecurity
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        Controller controller = Controller.Instance;
         // Constructor
         public MainPage()
         {
             InitializeComponent();
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
-
             
             
         }
@@ -27,9 +27,9 @@ namespace GryphonSecurity
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            if (startup)
+            if (controller.getStartup())
             {
-                startup = false;
+                controller.startUp();
                 NavigationService.Navigate(new Uri("/LoginLayout.xaml", UriKind.Relative));
             } 
         }
