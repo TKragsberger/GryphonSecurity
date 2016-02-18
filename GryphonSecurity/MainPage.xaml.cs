@@ -30,6 +30,7 @@ namespace GryphonSecurity
             if (controller.getStartup())
             {
                 controller.startUp();
+                //her mike få denne ændring
                 NavigationService.Navigate(new Uri("/LoginLayout.xaml", UriKind.Relative));
             } 
         }

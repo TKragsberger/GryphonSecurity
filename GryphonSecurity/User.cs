@@ -15,7 +15,7 @@ namespace GryphonSecurity
         public String toString()
         {
             return name + lastname + adresse + phoneNumber;
-    }
+        }
     }
 
     
