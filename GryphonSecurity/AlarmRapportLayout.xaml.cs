@@ -19,24 +19,35 @@ namespace GryphonSecurity
 
         private void sendRapport_Click(object sender, RoutedEventArgs e)
         {
-            TextBox kundenavnTB= (TextBox)textBoxKundenavn;
-            String kundenavn = kundenavnTB.Text;
-            TextBox kundenummerTB = (TextBox)textBoxKundenummer;
-            String kundenummer = kundenavnTB.Text;
-            TextBox gadeOgHusnummerTB = (TextBox)textBoxGadeOgHusnummer;
-            String gadeOgHusnummer = gadeOgHusnummerTB.Text;
-            TextBox postnummerTB = (TextBox)textBoxPostnummer;
-            String postnummer = postnummerTB.Text;
-            TextBox byTB = (TextBox)textBoxBy;
-            String by = byTB.Text;
-            TextBox telefonnummerTB = (TextBox)textBoxTelefonnummer;
-            String telefonnummer = telefonnummerTB.Text;
-            TextBox datoTB = (TextBox)textBoxDato;
-            String dato = datoTB.Text;
-            TextBox tidTB = (TextBox)textBoxTid;
-            String tid = tidTB.Text;
-            TextBox zoneTB = (TextBox)textBoxZone;
-            String zone = zoneTB.Text;
+            String kundenavnTB= textBoxKundenavn.Text;
+            String kundenummerTB = textBoxKundenummer.Text;
+            String gadeOgHusnummerTB = textBoxGadeOgHusnummer.Text;
+            String postnummerTB = textBoxPostnummer.Text;
+            String byTB = textBoxBy.Text;
+            String telefonnummerTB = textBoxTelefonnummer.Text;
+            String datoTB = textBoxDato.Text;
+            String tidTB = textBoxTid.Text;
+            String zoneTB = textBoxZone.Text;
+            Boolean indbrudHaevaerkCB = (Boolean)checkBoxIndbrudHaevaerk.IsChecked;
+            Boolean vindueDorLukketCB = (Boolean)checkBoxVindueDorLukket.IsChecked;
+            Boolean antruffenPersonCB = (Boolean)checkBoxAntruffenPerson.IsChecked;
+            Boolean personalefejlCB = (Boolean)checkBoxPersonalefejl.IsChecked;
+            Boolean intetAtBemaerkeCB = (Boolean)checkBoxIntetAtBemaerke.IsChecked;
+            Boolean tekniskFejlCB = (Boolean)checkBoxTekniskFejl.IsChecked;
+            Boolean ukendtAarsagCB = (Boolean)checkBoxUkendtAarsag.IsChecked;
+            Boolean andetCB = (Boolean)checkBoxAndet.IsChecked;
+            Boolean afmeldtUnderUdrykningCB = (Boolean)checkBoxAfmeldtUnderUdrykning.IsChecked;
+            Boolean afdaekningForetagetCB = (Boolean)checkBoxAfdaekningForetaget.IsChecked;
+            String bemaerkningTB = textBoxBemaerkning.Text;
+            String navnTB = textBoxNavn.Text;
+            String installatorTB = textBoxInstallator.Text;
+            String kontrolcentralTB = textBoxKontrolcentral.Text;
+            String vagtRekvireretDenTB = textBoxVagtRekvireretDen.Text;
+            String vagtRekvireretFraTB = textBoxVagtRekviveretFra.Text;
+            String vagtRekvireretTilTB = textBoxVagtRekviveretTil.Text;
+            String varFremmeTB = textBoxVarFremme.Text;
+            String faedigTB = textBoxFaedig.Text;
+            
         }
     }
 }
