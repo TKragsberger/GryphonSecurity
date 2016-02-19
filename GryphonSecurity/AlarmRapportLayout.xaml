@@ -35,8 +35,8 @@
                 <StackPanel>
                     
                     <TextBlock Margin="28,0,0,0">Kundenavn:</TextBlock>
-                    <toolkit:PhoneTextBox x:Name="textBoxKundenavn"  HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
-                    <toolkit:PhoneTextBox x:Name="textBoxKundenummer" Hint="Kundenummer" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxCustomerName"  HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
+                    <toolkit:PhoneTextBox x:Name="textBoxCustomerNumber" Hint="{Binding Path=LocalizedResources.CustomerNumber, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
                     <toolkit:PhoneTextBox x:Name="textBoxGadeOgHusnummer" Hint="Gade og husnummer" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
                     <toolkit:PhoneTextBox x:Name="textBoxPostnummer" Hint="Postnummer" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
                     <toolkit:PhoneTextBox x:Name="textBoxBy" Hint="By" HorizontalAlignment="Left" Height="72" Margin="14,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436"/>
