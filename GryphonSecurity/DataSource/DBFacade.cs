@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GryphonSecurity.DataSource;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,17 @@ namespace GryphonSecurity
 {
     class DBFacade
     {
-
+        DummyDB dummyDB = new DummyDB();
 
 
         public void login(String userName, String password)
         {
 
+        }
+
+        public Boolean createUser(User user)
+        {
+            return dummyDB.createUser(user);
         }
 
     }

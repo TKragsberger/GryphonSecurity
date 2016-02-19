@@ -122,5 +122,68 @@ namespace GryphonSecurity.Resources {
                 return ResourceManager.GetString("ResourceLanguage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        public static string UserAddress {
+            get {
+                return ResourceManager.GetString("UserAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Firstname.
+        /// </summary>
+        public static string UserFirstname {
+            get {
+                return ResourceManager.GetString("UserFirstname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lastname.
+        /// </summary>
+        public static string UserLastname {
+            get {
+                return ResourceManager.GetString("UserLastname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        public static string Username {
+            get {
+                return ResourceManager.GetString("Username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string UserPassword {
+            get {
+                return ResourceManager.GetString("UserPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Password.
+        /// </summary>
+        public static string UserPasswordConfirm {
+            get {
+                return ResourceManager.GetString("UserPasswordConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phonenumber.
+        /// </summary>
+        public static string UserPhonenumber {
+            get {
+                return ResourceManager.GetString("UserPhonenumber", resourceCulture);
+            }
+        }
     }
 }

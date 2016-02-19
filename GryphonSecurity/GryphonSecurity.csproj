@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataSource\DBFacade.cs" />
+    <Compile Include="DataSource\DummyDB.cs" />
     <Compile Include="Domain\Entity\AlarmRapport.cs" />
     <Compile Include="Domain\Entity\User.cs" />
     <Compile Include="Domain\Controller.cs" />

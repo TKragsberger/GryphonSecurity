@@ -8,13 +8,89 @@ namespace GryphonSecurity
 {
     class User
     {
-        private String name;
+        private long id;
+        private String firstname;
         private String lastname;
-        private String adresse;
-        private long phoneNumber;
+        private String address;
+        private long phonenumber;
+
+        public User(String firstname, String lastname, String address, long phonenumber)
+        {
+            id = 1;
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.address = address;
+            this.phonenumber = phonenumber;
+        }
+
+        public long Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
+        public string Firstname
+        {
+            get
+            {
+                return firstname;
+            }
+
+            set
+            {
+                firstname = value;
+            }
+        }
+
+        public string Lastname
+        {
+            get
+            {
+                return lastname;
+            }
+
+            set
+            {
+                lastname = value;
+            }
+        }
+
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+
+            set
+            {
+                address = value;
+            }
+        }
+
+        public long Phonenumber
+        {
+            get
+            {
+                return phonenumber;
+            }
+
+            set
+            {
+                phonenumber = value;
+            }
+        }
+
         public String toString()
         {
-            return name + lastname + adresse + phoneNumber;
+            return firstname + lastname + address + phonenumber;
         }
     }
 

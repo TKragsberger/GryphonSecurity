@@ -140,4 +140,25 @@
   <data name="CustomerNumber" xml:space="preserve">
     <value>Kundenummer</value>
   </data>
+  <data name="UserAddress" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="UserFirstname" xml:space="preserve">
+    <value>Fornavn</value>
+  </data>
+  <data name="UserLastname" xml:space="preserve">
+    <value>Efternavn</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Brugernavn</value>
+  </data>
+  <data name="UserPassword" xml:space="preserve">
+    <value>Kodeord</value>
+  </data>
+  <data name="UserPasswordConfirm" xml:space="preserve">
+    <value>Bekæft kodeord</value>
+  </data>
+  <data name="UserPhonenumber" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
 </root>

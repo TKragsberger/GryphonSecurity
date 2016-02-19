@@ -29,13 +29,16 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <toolkit:PhoneTextBox x:Name="textBoxFornavn" HorizontalAlignment="Left" Height="72" Margin="0,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Fornavn" />
-            <toolkit:PhoneTextBox x:Name="textBoxEfternavn" HorizontalAlignment="Left" Height="72" Margin="0,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Efternavn" />
-            <toolkit:PhoneTextBox x:Name="textBoxKodeord2" HorizontalAlignment="Left" Height="72" Margin="0,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
-            <toolkit:PhoneTextBox x:Name="brugernavn" HorizontalAlignment="Left" Height="72" Margin="0,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Brugernavn" TextChanged="textBoxKodeord3_TextChanged" />
-            <toolkit:PhoneTextBox x:Name="textBoxKodeord4" HorizontalAlignment="Left" Height="72" Margin="0,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
-            <toolkit:PhoneTextBox x:Name="textBoxKodeord" HorizontalAlignment="Left" Height="72" Margin="0,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
-            <Button x:Name="RegistrerBrugerButton" Content="Registrer " HorizontalAlignment="Left" Margin="67,514,0,0" VerticalAlignment="Top" Width="320"/>
+            <StackPanel>
+                <toolkit:PhoneTextBox x:Name="textBoxFirstname" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserFirstname, Source={StaticResource LocalizedStrings}}" />
+                <toolkit:PhoneTextBox x:Name="textBoxLastName" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserLastname, Source={StaticResource LocalizedStrings}}" />
+                <toolkit:PhoneTextBox x:Name="textBoxAddress" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserAddress, Source={StaticResource LocalizedStrings}}" />
+                <toolkit:PhoneTextBox x:Name="textBoxPhonenumber" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPhonenumber, Source={StaticResource LocalizedStrings}}" />
+                <toolkit:PhoneTextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.Username, Source={StaticResource LocalizedStrings}}" />
+                <toolkit:PhoneTextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPassword, Source={StaticResource LocalizedStrings}}" />
+                <toolkit:PhoneTextBox x:Name="textBoxPasswordConfirm" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPasswordConfirm, Source={StaticResource LocalizedStrings}}" />
+                <Button x:Name="RegistrerUserButton" Content="{Binding Path=LocalizedResources.CustomerNumber, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="320" Click="RegistrerBrugerButton_Click"/>
+            </StackPanel>
         </Grid>
     </Grid>
 
