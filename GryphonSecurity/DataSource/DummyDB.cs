@@ -20,6 +20,16 @@ namespace GryphonSecurity.DataSource
         private String KEY_PASSWORD = "PASSWORD";
         public Boolean createUser(User user)
         {
+            if (appSettings.Contains(KEY_FIRSTNAME))
+            {
+                appSettings.Remove(KEY_FIRSTNAME);
+                appSettings.Remove(KEY_LASTNAME);
+                appSettings.Remove(KEY_ADDRESS);
+                appSettings.Remove(KEY_PHONENUMBER);
+                appSettings.Remove(KEY_USERNAME);
+                appSettings.Remove(KEY_PASSWORD);
+            }
+
             try
             {
                 Debug.WriteLine("" + user.toString());
