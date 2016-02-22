@@ -126,7 +126,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>MY APPLICATION</value>
+    <value>Gryphon Security</value>
   </data>
   <data name="AppBarButtonText" xml:space="preserve">
     <value>add</value>
@@ -262,5 +262,26 @@
   </data>
   <data name="ReportGuardRadioedToTB" xml:space="preserve">
     <value>Guard radioed to:</value>
+  </data>
+  <data name="LayoutTitleAlarmReport" xml:space="preserve">
+    <value>Alarm Report</value>
+  </data>
+  <data name="LayoutTitleLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LayoutTitleNavigation" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="LayoutTitleRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="LayoutTitleScanNFC" xml:space="preserve">
+    <value>Scan NFC</value>
+  </data>
+  <data name="ReportAlarmReportFailed" xml:space="preserve">
+    <value>The report was not sent</value>
+  </data>
+  <data name="ReportAlarmReportSuccess" xml:space="preserve">
+    <value>The report was sent </value>
   </data>
 </root>

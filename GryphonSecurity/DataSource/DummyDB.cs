@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GryphonSecurity.Domain.Entity;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.IsolatedStorage;
@@ -68,6 +69,16 @@ namespace GryphonSecurity.DataSource
                 return null;
             }
             
+        }
+
+        public Boolean createAlarmReport(AlarmReport alarmReport)
+        {
+            return true;
+        }
+        //todo
+        public AlarmReport getAlarmReport()
+        {
+            return null;
         }
     }
 }

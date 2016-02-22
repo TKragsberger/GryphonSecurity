@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GryphonSecurity.Domain.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +49,11 @@ namespace GryphonSecurity
         public User getUser()
         {
             return dBFacade.getUser();
+        }
+
+        public Boolean createAlarmReport(AlarmReport alarmReport)
+        {
+            return dBFacade.createAlarmReport(alarmReport);
         }
     }
 }

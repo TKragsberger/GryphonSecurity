@@ -79,11 +79,56 @@ namespace GryphonSecurity.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MY APPLICATION.
+        ///   Looks up a localized string similar to Gryphon Security.
         /// </summary>
         public static string ApplicationTitle {
             get {
                 return ResourceManager.GetString("ApplicationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alarm Report.
+        /// </summary>
+        public static string LayoutTitleAlarmReport {
+            get {
+                return ResourceManager.GetString("LayoutTitleAlarmReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string LayoutTitleLogin {
+            get {
+                return ResourceManager.GetString("LayoutTitleLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Navigation.
+        /// </summary>
+        public static string LayoutTitleNavigation {
+            get {
+                return ResourceManager.GetString("LayoutTitleNavigation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string LayoutTitleRegister {
+            get {
+                return ResourceManager.GetString("LayoutTitleRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan NFC.
+        /// </summary>
+        public static string LayoutTitleScanNFC {
+            get {
+                return ResourceManager.GetString("LayoutTitleScanNFC", resourceCulture);
             }
         }
         
@@ -93,6 +138,24 @@ namespace GryphonSecurity.Resources {
         public static string LoginError {
             get {
                 return ResourceManager.GetString("LoginError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The report was not sent.
+        /// </summary>
+        public static string ReportAlarmReportFailed {
+            get {
+                return ResourceManager.GetString("ReportAlarmReportFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The report was sent .
+        /// </summary>
+        public static string ReportAlarmReportSuccess {
+            get {
+                return ResourceManager.GetString("ReportAlarmReportSuccess", resourceCulture);
             }
         }
         
