@@ -88,20 +88,263 @@ namespace GryphonSecurity.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There was an error when tryed to login.
+        /// </summary>
+        public static string LoginError {
+            get {
+                return ResourceManager.GetString("LoginError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apprehended person.
+        /// </summary>
+        public static string ReportApprehendedPerson {
+            get {
+                return ResourceManager.GetString("ReportApprehendedPerson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arrived at:.
+        /// </summary>
+        public static string ReportArrivedAtTB {
+            get {
+                return ResourceManager.GetString("ReportArrivedAtTB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Burglary vandalism.
+        /// </summary>
+        public static string ReportBurglaryVandalism {
+            get {
+                return ResourceManager.GetString("ReportBurglaryVandalism", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel during emergency.
+        /// </summary>
+        public static string ReportCancelsDuringEmergency {
+            get {
+                return ResourceManager.GetString("ReportCancelsDuringEmergency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        public static string ReportCity {
+            get {
+                return ResourceManager.GetString("ReportCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Control center.
+        /// </summary>
+        public static string ReportControlCenter {
+            get {
+                return ResourceManager.GetString("ReportControlCenter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cover made.
+        /// </summary>
+        public static string ReportCoverMade {
+            get {
+                return ResourceManager.GetString("ReportCoverMade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Customer name.
         /// </summary>
-        public static string CustomerName {
+        public static string ReportCustomerName {
             get {
-                return ResourceManager.GetString("CustomerName", resourceCulture);
+                return ResourceManager.GetString("ReportCustomerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer name:.
+        /// </summary>
+        public static string ReportCustomerNameTB {
+            get {
+                return ResourceManager.GetString("ReportCustomerNameTB", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Customer number.
         /// </summary>
-        public static string CustomerNumber {
+        public static string ReportCustomerNumber {
             get {
-                return ResourceManager.GetString("CustomerNumber", resourceCulture);
+                return ResourceManager.GetString("ReportCustomerNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date:.
+        /// </summary>
+        public static string ReportDateTB {
+            get {
+                return ResourceManager.GetString("ReportDateTB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Done:.
+        /// </summary>
+        public static string ReportDoneTB {
+            get {
+                return ResourceManager.GetString("ReportDoneTB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Guard radioed date:.
+        /// </summary>
+        public static string ReportGuardRadioedDateTB {
+            get {
+                return ResourceManager.GetString("ReportGuardRadioedDateTB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Guard radioed from:.
+        /// </summary>
+        public static string ReportGuardRadioedFromTB {
+            get {
+                return ResourceManager.GetString("ReportGuardRadioedFromTB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Guard radioed to:.
+        /// </summary>
+        public static string ReportGuardRadioedToTB {
+            get {
+                return ResourceManager.GetString("ReportGuardRadioedToTB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Installer.
+        /// </summary>
+        public static string ReportInstaller {
+            get {
+                return ResourceManager.GetString("ReportInstaller", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nothing to report.
+        /// </summary>
+        public static string ReportNothingToReport {
+            get {
+                return ResourceManager.GetString("ReportNothingToReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        public static string ReportOther {
+            get {
+                return ResourceManager.GetString("ReportOther", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phonenumber.
+        /// </summary>
+        public static string ReportPhonenumber {
+            get {
+                return ResourceManager.GetString("ReportPhonenumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remark.
+        /// </summary>
+        public static string ReportRemark {
+            get {
+                return ResourceManager.GetString("ReportRemark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send report.
+        /// </summary>
+        public static string ReportSendReportButton {
+            get {
+                return ResourceManager.GetString("ReportSendReportButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Staff error.
+        /// </summary>
+        public static string ReportStaffError {
+            get {
+                return ResourceManager.GetString("ReportStaffError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Street and house number.
+        /// </summary>
+        public static string ReportStreetAndHouseNumber {
+            get {
+                return ResourceManager.GetString("ReportStreetAndHouseNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Technical error.
+        /// </summary>
+        public static string ReportTechnicalError {
+            get {
+                return ResourceManager.GetString("ReportTechnicalError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown reason.
+        /// </summary>
+        public static string ReportUnknownReason {
+            get {
+                return ResourceManager.GetString("ReportUnknownReason", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Window door closed.
+        /// </summary>
+        public static string ReportWindowDoorClosed {
+            get {
+                return ResourceManager.GetString("ReportWindowDoorClosed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zip code.
+        /// </summary>
+        public static string ReportZipCode {
+            get {
+                return ResourceManager.GetString("ReportZipCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zone.
+        /// </summary>
+        public static string ReportZone {
+            get {
+                return ResourceManager.GetString("ReportZone", resourceCulture);
             }
         }
         
@@ -133,6 +376,15 @@ namespace GryphonSecurity.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User created.
+        /// </summary>
+        public static string UserCreated {
+            get {
+                return ResourceManager.GetString("UserCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Firstname.
         /// </summary>
         public static string UserFirstname {
@@ -151,11 +403,38 @@ namespace GryphonSecurity.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string UserLoginButton {
+            get {
+                return ResourceManager.GetString("UserLoginButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Username.
         /// </summary>
         public static string Username {
             get {
                 return ResourceManager.GetString("Username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username or password is wrong.
+        /// </summary>
+        public static string UsernamePasswordError {
+            get {
+                return ResourceManager.GetString("UsernamePasswordError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not created.
+        /// </summary>
+        public static string UserNotCreated {
+            get {
+                return ResourceManager.GetString("UserNotCreated", resourceCulture);
             }
         }
         
@@ -178,11 +457,38 @@ namespace GryphonSecurity.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Passwords was not the same.
+        /// </summary>
+        public static string UserPasswordNotEquel {
+            get {
+                return ResourceManager.GetString("UserPasswordNotEquel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Phonenumber.
         /// </summary>
         public static string UserPhonenumber {
             get {
                 return ResourceManager.GetString("UserPhonenumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string UserRegisterButton {
+            get {
+                return ResourceManager.GetString("UserRegisterButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error in registration.
+        /// </summary>
+        public static string UserRegitrationError {
+            get {
+                return ResourceManager.GetString("UserRegitrationError", resourceCulture);
             }
         }
     }

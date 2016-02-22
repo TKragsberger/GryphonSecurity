@@ -33,11 +33,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Grid.ColumnSpan="2">
-            <toolkit:PhoneTextBox x:Name="textBoxBrugernavn" HorizontalAlignment="Left" Height="72" Margin="0,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Brugernavn" RenderTransformOrigin="0.512,0.501"/>
-            <toolkit:PhoneTextBox x:Name="textBoxKodeord" HorizontalAlignment="Left" Height="72" Margin="0,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="Kodeord" />
-            <Button x:Name="registereButton" Content="Registrere" HorizontalAlignment="Left" Margin="30,500,0,0" VerticalAlignment="Top" Width="390" Click="registereButton_Click"/>
+            <toolkit:PhoneTextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="72" Margin="0,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.Username, Source={StaticResource LocalizedStrings}}" RenderTransformOrigin="0.512,0.501"/>
+            <toolkit:PhoneTextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="72" Margin="0,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPassword, Source={StaticResource LocalizedStrings}}" />
+            <Button x:Name="registerButton" Content="{Binding Path=LocalizedResources.UserRegisterButton, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="30,500,0,0" VerticalAlignment="Top" Width="390" Click="registereButton_Click"/>
         </Grid>
-        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="42,449,0,0" Grid.Row="1" VerticalAlignment="Top" Width="390" Click="button_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="{Binding Path=LocalizedResources.UserLoginButton, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="42,449,0,0" Grid.Row="1" VerticalAlignment="Top" Width="390" Click="button_Click" Grid.ColumnSpan="2"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

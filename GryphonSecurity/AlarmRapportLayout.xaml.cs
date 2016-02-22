@@ -17,36 +17,36 @@ namespace GryphonSecurity
             InitializeComponent();
         }
 
-        private void sendRapport_Click(object sender, RoutedEventArgs e)
+        private void sendReport_Click(object sender, RoutedEventArgs e)
         {
             String customerNameTB = textBoxCustomerName.Text;
-            String kundenummerTB = textBoxCustomerNumber.Text;
-            String gadeOgHusnummerTB = textBoxGadeOgHusnummer.Text;
-            String postnummerTB = textBoxPostnummer.Text;
-            String byTB = textBoxBy.Text;
-            String telefonnummerTB = textBoxTelefonnummer.Text;
-            String datoTB = textBoxDato.Text;
-            String tidTB = textBoxTid.Text;
+            String customerNumberTB = textBoxCustomerNumber.Text;
+            String streetAndHouseNumberTB = textBoxStreetAndHouseNumber.Text;
+            String zipCodeTB = textBoxZipCode.Text;
+            String cityTB = textBoxCity.Text;
+            String phonenumberTB = textBoxPhonenumber.Text;
+            String dateTB = textBoxDate.Text;
+            String timeTB = textBoxTime.Text;
             String zoneTB = textBoxZone.Text;
-            Boolean indbrudHaevaerkCB = (Boolean)checkBoxIndbrudHaevaerk.IsChecked;
-            Boolean vindueDorLukketCB = (Boolean)checkBoxVindueDorLukket.IsChecked;
-            Boolean antruffenPersonCB = (Boolean)checkBoxAntruffenPerson.IsChecked;
-            Boolean personalefejlCB = (Boolean)checkBoxPersonalefejl.IsChecked;
-            Boolean intetAtBemaerkeCB = (Boolean)checkBoxIntetAtBemaerke.IsChecked;
-            Boolean tekniskFejlCB = (Boolean)checkBoxTekniskFejl.IsChecked;
-            Boolean ukendtAarsagCB = (Boolean)checkBoxUkendtAarsag.IsChecked;
-            Boolean andetCB = (Boolean)checkBoxAndet.IsChecked;
-            Boolean afmeldtUnderUdrykningCB = (Boolean)checkBoxAfmeldtUnderUdrykning.IsChecked;
-            Boolean afdaekningForetagetCB = (Boolean)checkBoxAfdaekningForetaget.IsChecked;
-            String bemaerkningTB = textBoxBemaerkning.Text;
-            String navnTB = textBoxNavn.Text;
-            String installatorTB = textBoxInstallator.Text;
-            String kontrolcentralTB = textBoxKontrolcentral.Text;
-            String vagtRekvireretDenTB = textBoxVagtRekvireretDen.Text;
-            String vagtRekvireretFraTB = textBoxVagtRekviveretFra.Text;
-            String vagtRekvireretTilTB = textBoxVagtRekviveretTil.Text;
-            String varFremmeTB = textBoxVarFremme.Text;
-            String faedigTB = textBoxFaedig.Text;
+            Boolean burglaryVandalismkCB = (Boolean)checkBoxBurglaryVandalism.IsChecked;
+            Boolean windowDoorClosedCB = (Boolean)checkBoxWindowDoorClosed.IsChecked;
+            Boolean apprehendedPersonCB = (Boolean)checkBoxApprehendedPerson.IsChecked;
+            Boolean staffErrorCB = (Boolean)checkBoxStaffError.IsChecked;
+            Boolean nothingToReportCB = (Boolean)checkBoxNothingToReport.IsChecked;
+            Boolean technicalErrorCB = (Boolean)checkBoxTechnicalError.IsChecked;
+            Boolean unknownReasonCB = (Boolean)checkBoxUnknownReason.IsChecked;
+            Boolean otherCB = (Boolean)checkBoxOther.IsChecked;
+            Boolean cancelsDuringEmergencyCB = (Boolean)checkBoxCancelsDuringEmergency.IsChecked;
+            Boolean coverMadeCB = (Boolean)checkBoxCoverMade.IsChecked;
+            String remarkTB = textBoxRemark.Text;
+            String nameTB = textBoxName.Text;
+            String installerTB = textBoxInstaller.Text;
+            String controlCenterTB = textBoxControlCenter.Text;
+            String guardRadioedDateTB = textBoxGuardRadioedDate.Text;
+            String guardRadioedFromTB = textBoxGuardRadioedFrom.Text;
+            String guardRadioedToTB = textBoxGuardRadioedTo.Text;
+            String arrivedAtTB = textBoxArrivedAt.Text;
+            String doneTB = textBoxDone.Text;
             
         }
     }

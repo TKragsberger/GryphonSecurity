@@ -37,7 +37,7 @@
                 <toolkit:PhoneTextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.Username, Source={StaticResource LocalizedStrings}}" />
                 <toolkit:PhoneTextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPassword, Source={StaticResource LocalizedStrings}}" />
                 <toolkit:PhoneTextBox x:Name="textBoxPasswordConfirm" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPasswordConfirm, Source={StaticResource LocalizedStrings}}" />
-                <Button x:Name="RegistrerUserButton" Content="{Binding Path=LocalizedResources.CustomerNumber, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="320" Click="RegistrerBrugerButton_Click"/>
+                <Button x:Name="RegistrerUserButton" Content="{Binding Path=LocalizedResources.UserRegisterButton, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="320" Click="RegistrerBrugerButton_Click"/>
             </StackPanel>
         </Grid>
     </Grid>

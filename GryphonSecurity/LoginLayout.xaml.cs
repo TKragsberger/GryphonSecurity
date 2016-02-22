@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using GryphonSecurity.Resources;
 
 namespace GryphonSecurity
 {
@@ -23,9 +24,9 @@ namespace GryphonSecurity
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            TextBox t = (TextBox)textBoxBrugernavn;
+            TextBox t = (TextBox)textBoxUsername;
             String username = t.Text;
-            TextBox t2 = (TextBox)textBoxKodeord;
+            TextBox t2 = (TextBox)textBoxPassword;
             String password = t2.Text;
             User user = controller.getUser();
            if (username.Contains(user.Username) && password.Contains(user.Password))
@@ -38,12 +39,12 @@ namespace GryphonSecurity
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Fejl i login");  
+                    MessageBox.Show(AppResources.LoginError);  
                 }
             }
            else
             {
-               MessageBox.Show("Brugernavn eller kodeord er forkert");
+               MessageBox.Show(AppResources.UsernamePasswordError);
             }
        }
 

@@ -134,10 +134,10 @@
   <data name="AppBarMenuItemText" xml:space="preserve">
     <value>Menu Item</value>
   </data>
-  <data name="CustomerName" xml:space="preserve">
-    <value>kundenavn</value>
+  <data name="ReportCustomerName" xml:space="preserve">
+    <value>Kundenavn</value>
   </data>
-  <data name="CustomerNumber" xml:space="preserve">
+  <data name="ReportCustomerNumber" xml:space="preserve">
     <value>Kundenummer</value>
   </data>
   <data name="UserAddress" xml:space="preserve">
@@ -160,5 +160,107 @@
   </data>
   <data name="UserPhonenumber" xml:space="preserve">
     <value>Telefonnummer</value>
+  </data>
+  <data name="UserRegisterButton" xml:space="preserve">
+    <value>Registrere</value>
+  </data>
+  <data name="UserLoginButton" xml:space="preserve">
+    <value>Log ind</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Der skete en fejl ved login</value>
+  </data>
+  <data name="UsernamePasswordError" xml:space="preserve">
+    <value>Brugernavn eller kodeord forkert</value>
+  </data>
+  <data name="ReportApprehendedPerson" xml:space="preserve">
+    <value>Antruffen Person</value>
+  </data>
+  <data name="ReportBurglaryVandalism" xml:space="preserve">
+    <value>Indbrud hærværk</value>
+  </data>
+  <data name="ReportCancelsDuringEmergency" xml:space="preserve">
+    <value>Afmeldt under udrykning</value>
+  </data>
+  <data name="ReportCity" xml:space="preserve">
+    <value>By</value>
+  </data>
+  <data name="ReportControlCenter" xml:space="preserve">
+    <value>Kontrolcentral</value>
+  </data>
+  <data name="ReportCoverMade" xml:space="preserve">
+    <value>Afdækning foretaget</value>
+  </data>
+  <data name="ReportInstaller" xml:space="preserve">
+    <value>Installatør</value>
+  </data>
+  <data name="ReportNothingToReport" xml:space="preserve">
+    <value>Intet at bemærke</value>
+  </data>
+  <data name="ReportOther" xml:space="preserve">
+    <value>Andet</value>
+  </data>
+  <data name="ReportPhonenumber" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
+  <data name="ReportRemark" xml:space="preserve">
+    <value>Bemærkning</value>
+  </data>
+  <data name="ReportSendReportButton" xml:space="preserve">
+    <value>Send Rapport</value>
+  </data>
+  <data name="ReportStaffError" xml:space="preserve">
+    <value>Personalefejl</value>
+  </data>
+  <data name="ReportStreetAndHouseNumber" xml:space="preserve">
+    <value>Gade og husnummer</value>
+  </data>
+  <data name="ReportTechnicalError" xml:space="preserve">
+    <value>Teknisk fejl</value>
+  </data>
+  <data name="ReportUnknownReason" xml:space="preserve">
+    <value>Ukendt årsag</value>
+  </data>
+  <data name="ReportWindowDoorClosed" xml:space="preserve">
+    <value>Vindue dør lukket</value>
+  </data>
+  <data name="ReportZipCode" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
+  <data name="ReportZone" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="UserCreated" xml:space="preserve">
+    <value>Bruger oprettet</value>
+  </data>
+  <data name="UserNotCreated" xml:space="preserve">
+    <value>Bruger blev ikke oprettet</value>
+  </data>
+  <data name="UserPasswordNotEquel" xml:space="preserve">
+    <value>kodeord var ikke ens</value>
+  </data>
+  <data name="UserRegistrationError" xml:space="preserve">
+    <value>Fejl i registrering</value>
+  </data>
+  <data name="ReportCustomerNameTB" xml:space="preserve">
+    <value>Kundenavn:</value>
+  </data>
+  <data name="ReportArrivedAtTB" xml:space="preserve">
+    <value>Var fremme:</value>
+  </data>
+  <data name="ReportDateTB" xml:space="preserve">
+    <value>Dato:</value>
+  </data>
+  <data name="ReportDoneTB" xml:space="preserve">
+    <value>Færdig:</value>
+  </data>
+  <data name="ReportGuardRadioedDateTB" xml:space="preserve">
+    <value>Vagt rekviveret den:</value>
+  </data>
+  <data name="ReportGuardRadioedFromTB" xml:space="preserve">
+    <value>Vagt rekviveret fra:</value>
+  </data>
+  <data name="ReportGuardRadioedToTB" xml:space="preserve">
+    <value>Vagt rekviveret til:</value>
   </data>
 </root>
