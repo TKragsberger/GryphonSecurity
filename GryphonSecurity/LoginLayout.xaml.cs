@@ -44,7 +44,7 @@ namespace GryphonSecurity
            else
             {
                MessageBox.Show("Brugernavn eller kodeord er forkert");
-           }
+            }
        }
 
         private void registereButton_Click(object sender, RoutedEventArgs e)

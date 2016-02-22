@@ -4,17 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GryphonSecurity
+namespace GryphonSecurity.Domain.Entity
 {
-    class DBFacade
+    class AlarmRapport
     {
-
-
-
-        public void login(String userName, String password)
-        {
-
-        }
-
     }
 }

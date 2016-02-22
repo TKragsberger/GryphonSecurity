@@ -8,14 +8,14 @@ namespace GryphonSecurity
 {
     class Controller
     {
-        private DBFacade dbFacade;
+        private DBFacade dBFacade;
         Boolean startup = true;
 
         
         private static Controller instance;
         private Controller()
         {
-            dbFacade = new DBFacade();
+            dBFacade = new DBFacade();
         }
         public static Controller Instance
         {
@@ -30,7 +30,7 @@ namespace GryphonSecurity
         }
         public void login(String userName, String password)
         {
-            dbFacade.login(userName, password);
+            dBFacade.login(userName, password);
         }
         public void startUp()
         {
@@ -39,6 +39,10 @@ namespace GryphonSecurity
         public Boolean getStartup()
         {
             return startup;
+        }
+        public Boolean createUser(User user)
+        {
+            return dBFacade.createUser(user);
         }
     }
 }

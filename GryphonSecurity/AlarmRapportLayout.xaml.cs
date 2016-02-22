@@ -19,8 +19,8 @@ namespace GryphonSecurity
 
         private void sendRapport_Click(object sender, RoutedEventArgs e)
         {
-            String kundenavnTB= textBoxKundenavn.Text;
-            String kundenummerTB = textBoxKundenummer.Text;
+            String customerNameTB = textBoxCustomerName.Text;
+            String kundenummerTB = textBoxCustomerNumber.Text;
             String gadeOgHusnummerTB = textBoxGadeOgHusnummer.Text;
             String postnummerTB = textBoxPostnummer.Text;
             String byTB = textBoxBy.Text;
