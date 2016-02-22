@@ -8,32 +8,21 @@ namespace GryphonSecurity
 {
     class User
     {
-        private long id;
         private String firstname;
         private String lastname;
         private String address;
         private long phonenumber;
+        private String username;
+        private String password;
 
-        public User(String firstname, String lastname, String address, long phonenumber)
+        public User(String firstname, String lastname, String address, long phonenumber, String username, String password)
         {
-            id = 1;
             this.firstname = firstname;
             this.lastname = lastname;
             this.address = address;
             this.phonenumber = phonenumber;
-        }
-
-        public long Id
-        {
-            get
-            {
-                return id;
-            }
-
-            set
-            {
-                id = value;
-            }
+            this.username = username;
+            this.password = password;
         }
 
         public string Firstname
@@ -88,6 +77,31 @@ namespace GryphonSecurity
             }
         }
 
+        public String Username
+        {
+            get
+            {
+                return username;
+            }
+
+            set
+            {
+                username = value;
+            }
+        }
+
+        public String Password
+        {
+            get
+            {
+                return password;
+            }
+
+            set
+            {
+                password = value;
+            }
+        }
         public String toString()
         {
             return firstname + lastname + address + phonenumber;

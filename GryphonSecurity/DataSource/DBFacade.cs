@@ -22,5 +22,10 @@ namespace GryphonSecurity
             return dummyDB.createUser(user);
         }
 
+        public User getUser()
+        {
+            return dummyDB.getUser();
+        }
+
     }
 }

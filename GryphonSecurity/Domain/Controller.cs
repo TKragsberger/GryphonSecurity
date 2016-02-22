@@ -44,5 +44,10 @@ namespace GryphonSecurity
         {
             return dBFacade.createUser(user);
         }
+
+        public User getUser()
+        {
+            return dBFacade.getUser();
+        }
     }
 }

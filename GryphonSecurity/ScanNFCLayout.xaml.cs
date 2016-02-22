@@ -36,7 +36,7 @@ private void scanButton_Click(object sender, RoutedEventArgs e)
         private void messageReceived(ProximityDevice sender,ProximityMessage message)
         {
           
-            textBlockTest.Text += "message modetaget: " + message.DataAsString;
+            //textBlockTest.Text += "message modetaget: " + message.DataAsString;
           //  Debug.WriteLine("Received from {0}:'{1}'", sender.DeviceId, message.DataAsString);
         }
 

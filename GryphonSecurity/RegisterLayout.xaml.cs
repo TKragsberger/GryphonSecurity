@@ -32,7 +32,7 @@ namespace GryphonSecurity
             {
                 try
                 {
-                    User user = new User(firstname, lastname, address, phonenumber);
+                    User user = new User(firstname, lastname, address, phonenumber, username, password);
                     Debug.WriteLine("test");
                     if (controller.createUser(user))
                     {

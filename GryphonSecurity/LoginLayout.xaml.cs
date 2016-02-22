@@ -17,23 +17,23 @@ namespace GryphonSecurity
         public LoginLayout()
         {
             InitializeComponent();
-
+            
             //String lastName = textBoxLastname.Text;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             TextBox t = (TextBox)textBoxBrugernavn;
-            String brugernavn = t.Text;
+            String username = t.Text;
             TextBox t2 = (TextBox)textBoxKodeord;
-            String kodeord = t2.Text;
-
-           if (brugernavn.Contains("knud") && kodeord.Contains("sutter"))
+            String password = t2.Text;
+            User user = controller.getUser();
+           if (username.Contains(user.Username) && password.Contains(user.Password))
             {
                 NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
                 try
                 { 
-                    controller.login(brugernavn, kodeord);
+                    controller.login(username, password);
 
                 }
                 catch (Exception)

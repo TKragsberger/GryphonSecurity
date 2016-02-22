@@ -15,7 +15,9 @@ namespace GryphonSecurity.DataSource
         private String KEY_FIRSTNAME = "FIRSTNAME";
         private String KEY_LASTNAME = "LASTNAME";
         private String KEY_ADDRESS = "ADDRESS";
-        private String KEy_PHONENUMBER = "PHONENUMBER";
+        private String KEY_PHONENUMBER = "PHONENUMBER";
+        private String KEY_USERNAME = "USERNAME";
+        private String KEY_PASSWORD = "PASSWORD";
         public Boolean createUser(User user)
         {
             try
@@ -24,7 +26,9 @@ namespace GryphonSecurity.DataSource
                 appSettings.Add(KEY_FIRSTNAME, user.Firstname);
                 appSettings.Add(KEY_LASTNAME, user.Lastname);
                 appSettings.Add(KEY_ADDRESS, user.Address);
-                appSettings.Add(KEy_PHONENUMBER, user.Phonenumber);
+                appSettings.Add(KEY_PHONENUMBER, user.Phonenumber);
+                appSettings.Add(KEY_USERNAME, user.Username);
+                appSettings.Add(KEY_PASSWORD, user.Password);
                 appSettings.Save();
                 dummyDBStatus = true;
 
@@ -35,6 +39,25 @@ namespace GryphonSecurity.DataSource
                 Debug.WriteLine("you are here");
             }
             return dummyDBStatus;
+        }
+
+        public User getUser()
+        {
+            if (appSettings.Contains(KEY_USERNAME))
+            {
+                String firstname = appSettings[KEY_FIRSTNAME] as String;
+                String lastname = appSettings[KEY_LASTNAME] as String;
+                String address = appSettings[KEY_ADDRESS] as String;
+                long phonenumber = Convert.ToInt64(appSettings[KEY_PHONENUMBER] as String);
+                String username = appSettings[KEY_USERNAME] as String;
+                String password = appSettings[KEY_PASSWORD] as String;
+                return new User(firstname, lastname, address, phonenumber, username, password);
+            }
+            else
+            {
+                return null;
+            }
+            
         }
     }
 }
