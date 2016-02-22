@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataSource\Class1.cs" />
     <Compile Include="DataSource\DBFacade.cs" />
     <Compile Include="DataSource\DummyDB.cs" />
     <Compile Include="Domain\Entity\AlarmRapport.cs" />
