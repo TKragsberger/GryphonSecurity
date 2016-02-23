@@ -7,47 +7,61 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using System.Globalization;
+using GryphonSecurity.Domain.Entity;
+using GryphonSecurity.Resources;
 
 namespace GryphonSecurity
 {
     public partial class AlarmRapport : PhoneApplicationPage
     {
+        Controller controller = Controller.Instance;
         public AlarmRapport()
         {
             InitializeComponent();
         }
 
-        private void sendRapport_Click(object sender, RoutedEventArgs e)
+        private void sendReport_Click(object sender, RoutedEventArgs e)
         {
             String customerNameTB = textBoxCustomerName.Text;
-            String kundenummerTB = textBoxCustomerNumber.Text;
-            String gadeOgHusnummerTB = textBoxGadeOgHusnummer.Text;
-            String postnummerTB = textBoxPostnummer.Text;
-            String byTB = textBoxBy.Text;
-            String telefonnummerTB = textBoxTelefonnummer.Text;
-            String datoTB = textBoxDato.Text;
-            String tidTB = textBoxTid.Text;
+            long customerNumberTB = Convert.ToInt64(textBoxCustomerNumber.Text);
+            String streetAndHouseNumberTB = textBoxStreetAndHouseNumber.Text;
+            int zipCodeTB = Convert.ToInt32(textBoxZipCode.Text);
+            String cityTB = textBoxCity.Text;
+            long phonenumberTB = Convert.ToInt64(textBoxPhonenumber.Text);
+            DateTime dateTB = DateTime.Parse(textBoxDate.Text, CultureInfo.InvariantCulture);
+            DateTime timeTB = DateTime.Parse(textBoxTime.Text, CultureInfo.InvariantCulture);
             String zoneTB = textBoxZone.Text;
-            Boolean indbrudHaevaerkCB = (Boolean)checkBoxIndbrudHaevaerk.IsChecked;
-            Boolean vindueDorLukketCB = (Boolean)checkBoxVindueDorLukket.IsChecked;
-            Boolean antruffenPersonCB = (Boolean)checkBoxAntruffenPerson.IsChecked;
-            Boolean personalefejlCB = (Boolean)checkBoxPersonalefejl.IsChecked;
-            Boolean intetAtBemaerkeCB = (Boolean)checkBoxIntetAtBemaerke.IsChecked;
-            Boolean tekniskFejlCB = (Boolean)checkBoxTekniskFejl.IsChecked;
-            Boolean ukendtAarsagCB = (Boolean)checkBoxUkendtAarsag.IsChecked;
-            Boolean andetCB = (Boolean)checkBoxAndet.IsChecked;
-            Boolean afmeldtUnderUdrykningCB = (Boolean)checkBoxAfmeldtUnderUdrykning.IsChecked;
-            Boolean afdaekningForetagetCB = (Boolean)checkBoxAfdaekningForetaget.IsChecked;
-            String bemaerkningTB = textBoxBemaerkning.Text;
-            String navnTB = textBoxNavn.Text;
-            String installatorTB = textBoxInstallator.Text;
-            String kontrolcentralTB = textBoxKontrolcentral.Text;
-            String vagtRekvireretDenTB = textBoxVagtRekvireretDen.Text;
-            String vagtRekvireretFraTB = textBoxVagtRekviveretFra.Text;
-            String vagtRekvireretTilTB = textBoxVagtRekviveretTil.Text;
-            String varFremmeTB = textBoxVarFremme.Text;
-            String faedigTB = textBoxFaedig.Text;
-            
+            Boolean burglaryVandalismkCB = (Boolean)checkBoxBurglaryVandalism.IsChecked;
+            Boolean windowDoorClosedCB = (Boolean)checkBoxWindowDoorClosed.IsChecked;
+            Boolean apprehendedPersonCB = (Boolean)checkBoxApprehendedPerson.IsChecked;
+            Boolean staffErrorCB = (Boolean)checkBoxStaffError.IsChecked;
+            Boolean nothingToReportCB = (Boolean)checkBoxNothingToReport.IsChecked;
+            Boolean technicalErrorCB = (Boolean)checkBoxTechnicalError.IsChecked;
+            Boolean unknownReasonCB = (Boolean)checkBoxUnknownReason.IsChecked;
+            Boolean otherCB = (Boolean)checkBoxOther.IsChecked;
+            Boolean cancelsDuringEmergencyCB = (Boolean)checkBoxCancelsDuringEmergency.IsChecked;
+            Boolean coverMadeCB = (Boolean)checkBoxCoverMade.IsChecked;
+            String remarkTB = textBoxRemark.Text;
+            String nameTB = textBoxName.Text;
+            String installerTB = textBoxInstaller.Text;
+            String controlCenterTB = textBoxControlCenter.Text;
+            DateTime guardRadioedDateTB = DateTime.Parse(textBoxGuardRadioedDate.Text, CultureInfo.InvariantCulture);
+            DateTime guardRadioedFromTB = DateTime.Parse(textBoxGuardRadioedFrom.Text, CultureInfo.InvariantCulture);
+            DateTime guardRadioedToTB = DateTime.Parse(textBoxGuardRadioedTo.Text, CultureInfo.InvariantCulture);
+            DateTime arrivedAtTB = DateTime.Parse(textBoxArrivedAt.Text, CultureInfo.InvariantCulture);
+            DateTime doneTB = DateTime.Parse(textBoxDone.Text, CultureInfo.InvariantCulture);
+            if(controller.createAlarmReport(new AlarmReport(customerNameTB, customerNumberTB, streetAndHouseNumberTB, zipCodeTB, cityTB, phonenumberTB, dateTB, timeTB, zoneTB, burglaryVandalismkCB,
+                                        windowDoorClosedCB, apprehendedPersonCB, staffErrorCB, nothingToReportCB, technicalErrorCB, unknownReasonCB, otherCB, cancelsDuringEmergencyCB, coverMadeCB,
+                                        remarkTB, nameTB, installerTB, controlCenterTB, guardRadioedDateTB, guardRadioedFromTB, guardRadioedToTB, arrivedAtTB, doneTB)))
+            {
+                MessageBox.Show(AppResources.ReportAlarmReportSuccess);
+            }
+            else
+            {
+                MessageBox.Show(AppResources.ReportAlarmReportFailed);
+            }
+
         }
     }
 }

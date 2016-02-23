@@ -41,14 +41,14 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Gryphon Security" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="Navigation" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.LayoutTitleNavigation, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Margin="14,151,10,10" Grid.RowSpan="2">
-            <Button x:Name="button" Content="Scan NFC" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="436" Click="button_Click"/>
-            <Button x:Name="button1" Content="Alarm Rapprt" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="436" Click="button1_Click"/>
+            <Button x:Name="scanNFCButton" Content="{Binding Path=LocalizedResources.LayoutTitleScanNFC, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="436" Click="scanNFCButton_Click"/>
+            <Button x:Name="alarmReportButton" Content="{Binding Path=LocalizedResources.LayoutTitleAlarmReport, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="436" Click="alarmReportButton_Click"/>
 
         </Grid>
 

@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Diagnostics;
+using GryphonSecurity.Resources;
 
 namespace GryphonSecurity
 {
@@ -32,27 +33,26 @@ namespace GryphonSecurity
             {
                 try
                 {
-                    User user = new User(firstname, lastname, address, phonenumber);
-                    Debug.WriteLine("test");
+                    User user = new User(firstname, lastname, address, phonenumber, username, password);
                     if (controller.createUser(user))
                     {
-                        MessageBox.Show("Bruger oprettet");
+                        MessageBox.Show(AppResources.UserCreated);
                         NavigationService.Navigate(new Uri("/LoginLayout.xaml", UriKind.Relative));
                     }
                     else
                     {
-                        MessageBox.Show("Bruger blev ikke oprettet");
+                        MessageBox.Show(AppResources.UserNotCreated);
                     }
 
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Fejl i registrering");
+                    MessageBox.Show(AppResources.UserRegitrationError);
                 }
             }
             else
             {
-                MessageBox.Show("kodeord var ikke ens");
+                MessageBox.Show(AppResources.UserPasswordNotEquel);
             }
         }
     }

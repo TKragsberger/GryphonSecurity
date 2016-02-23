@@ -23,8 +23,8 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Gryphon Security" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Register" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.LayoutTitleRegister, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -37,7 +37,7 @@
                 <toolkit:PhoneTextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.Username, Source={StaticResource LocalizedStrings}}" />
                 <toolkit:PhoneTextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPassword, Source={StaticResource LocalizedStrings}}" />
                 <toolkit:PhoneTextBox x:Name="textBoxPasswordConfirm" HorizontalAlignment="Left" Height="72" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Hint="{Binding Path=LocalizedResources.UserPasswordConfirm, Source={StaticResource LocalizedStrings}}" />
-                <Button x:Name="RegistrerUserButton" Content="{Binding Path=LocalizedResources.CustomerNumber, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="320" Click="RegistrerBrugerButton_Click"/>
+                <Button x:Name="RegistrerUserButton" Content="{Binding Path=LocalizedResources.UserRegisterButton, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Top" Width="320" Click="RegistrerBrugerButton_Click"/>
             </StackPanel>
         </Grid>
     </Grid>

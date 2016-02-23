@@ -37,12 +37,12 @@ namespace GryphonSecurity
 
 
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void scanNFCButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/ScanNFCLayout.xaml", UriKind.Relative));
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void alarmReportButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/AlarmRapportLayout.xaml", UriKind.Relative));
         }
