@@ -28,7 +28,7 @@ private void scanButton_Click(object sender, RoutedEventArgs e)
         {
                
 
-                  device.SubscribeForMessage("NDEF", messageReceived);
+                  device.SubscribeForMessage("WindowsMime", messageReceived);
               //  Debug.WriteLine("Published Message. ID is {0}", Id);
             
 
