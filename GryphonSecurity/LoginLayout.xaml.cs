@@ -28,25 +28,27 @@ namespace GryphonSecurity
             String username = t.Text;
             TextBox t2 = (TextBox)textBoxPassword;
             String password = t2.Text;
-            User user = controller.getUser();
-           if (username.Contains(user.Username) && password.Contains(user.Password))
-            {
-                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
-                try
-                { 
-                    controller.login(username, password);
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            /**           User user = controller.getUser();
+                      if (username.Contains(user.Username) && password.Contains(user.Password))
+                       {
+                           NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+                           try
+                           { 
+                               controller.login(username, password);
 
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show(AppResources.LoginError);  
-                }
-            }
-           else
-            {
-               MessageBox.Show(AppResources.UsernamePasswordError);
-            }
-       }
+                           }
+                           catch (Exception)
+                           {
+                               MessageBox.Show(AppResources.LoginError);  
+                           }
+                       }
+                      else
+                       {
+                          MessageBox.Show(AppResources.UsernamePasswordError);
+                       }
+               **/
+        }
 
         private void registereButton_Click(object sender, RoutedEventArgs e)
         {

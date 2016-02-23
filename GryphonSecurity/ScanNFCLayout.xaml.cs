@@ -28,16 +28,22 @@ private void scanButton_Click(object sender, RoutedEventArgs e)
         {
                
 
-                  device.SubscribeForMessage("WindowsMime", messageReceived);
+                  device.SubscribeForMessage("NDEF", messageReceived);
               //  Debug.WriteLine("Published Message. ID is {0}", Id);
             
 
         }
         private void messageReceived(ProximityDevice sender,ProximityMessage message)
         {
-          
-            //textBlockTest.Text += "message modetaget: " + message.DataAsString;
-          //  Debug.WriteLine("Received from {0}:'{1}'", sender.DeviceId, message.DataAsString);
+            Dispatcher.BeginInvoke(() =>
+            {
+                textBlockTest.Text += "message modetaget: " + message.DataAsString;
+                textBlockTest.Text += "Type: " + message.MessageType;
+                Debug.WriteLine("Received from {0}:'{1}'", sender.DeviceId, message.DataAsString);
+
+            });
+   
+           
         }
 
         private void initializeProximitySample() {
